@@ -1,0 +1,54 @@
+body {
+    background-image: url('C:\PMD\frontend\src\assets\images\Background\Pred-bg.jpg'); /* Replace 'background-image.jpg' with your image URL */
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     /* Adjust opacity as needed */
+}
+
+.form-control,
+.btn {
+    margin-bottom: 15px;
+    
+}
+
+
+.form-group {
+    border-radius: 40px;
+     /* Round corners of input fields */
+    
+}
+
+.btn {
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-success:hover {
+    background-color: rgb(35, 13, 238); /* Change to green on hover */
+    border-color: rgb(192, 30, 92); /* Change border color to match */
+}
+
+/* Create Account button */
+.btn-light:hover {
+    background-color: rgb(21, 12, 107); /* Change to green on hover */
+    border-color: rgb(40, 28, 145); /* Change border color to match */
+}
+.card {
+    background-color: #574e4e; /* Dark color for the container */
+    padding: 20px; /* Adjust padding as needed */
+    margin-top: 20%;
+}
+
+/* Set input fields to white */
+.form-group {
+    background-color: #fff; /* White background for input fields */
+    color: #333; /* Dark text color for input fields */
+}
+.card-header.text-center {
+    font-size: 40px; /* Set font size to 20 */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Brush Script MT', sans-serif; /* Replace 'Your Font Style' with your desired font */
+    color: #f1efef;
+}

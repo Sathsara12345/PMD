@@ -1,0 +1,27 @@
+/* CSS for the Corona admin template card */
+
+/* Card container */
+.corona-gradient-card {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+  }
+  
+  /* Card image */
+  .gradient-corona-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Button */
+  .get-started-btn {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  /* Button hover */
+  .get-started-btn:hover {
+    background-color: #fff;
+    color: #6a11cb;
+  }
+  
