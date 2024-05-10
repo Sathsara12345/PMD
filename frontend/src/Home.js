@@ -119,9 +119,9 @@ function Home() {
       <form onSubmit={handleSubmit}>
       <label style={styles.label} title="This is the type of the input field.">Type:</label><br />
         <select style={styles.input} name="Type" value={formData.Type} onChange={handleChange}>
-          <option value="0">Low</option>
-          <option value="1">Medium</option>
-          <option value="2">High</option>
+          <option value="L">Low</option>
+          <option value="M">Medium</option>
+          <option value="H">High</option>
         </select><br />
 
       <label style={styles.label} title="This is the air temperature in Kelvin.">Air temperature (K):</label><br />
@@ -150,20 +150,12 @@ function Home() {
     <Card.Body>
         <Card.Title><h2>Predictions</h2></Card.Title>
         <Card.Text> */}
-        {predictions && (
-        <div>
-     <Card style={styles.Card}>
-<p>Target Prediction: {predictions.target_prediction === 1 ? 'Failure Machine' : 'Not a Failure Machine'}</p>
-<p>Failure Prediction: {
-  predictions.failure_prediction === 1 ? 'No Failure' :
-  predictions.failure_prediction === 0 ? 'Heat Dissipation Failure' :
-  predictions.failure_prediction === 2 ? 'Overstain Failure' :
-  predictions.failure_prediction === 3 ? 'Power Failure' :
-  predictions.failure_prediction === 4 ? 'Random Failures' :
-  predictions.failure_prediction === 5 ? 'Tool Wear Failure' :
-  'Unknown'
-}</p>
-</Card>
+          {predictions && (
+          <div>
+      <Card style={styles.Card}>
+  <p>Failure Prediction: {predictions.target_prediction}</p>
+  
+  </Card>
 </div>
 
       )}
